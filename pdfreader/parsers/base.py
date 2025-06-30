@@ -88,7 +88,7 @@ class BasicTypesParser(object):
 
     @property
     def is_eol(self):
-        return self.current is None or self.current in EOL
+        return self.is_eof or self.current in EOL
 
     @property
     def is_whitespace(self):
